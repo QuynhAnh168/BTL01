@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NhanVien"
+            android:icon="@drawable/baseline_support_agent_24"
+            android:title="Nhân viên"
+        />
+        <item
+            android:id="@+id/KhachHang"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="Khách hàng"
+            />
+        <item
+            android:id="@+id/VatTu"
+            android:icon="@drawable/sharp_content_cut_24"
+            android:title="Vật tư"
+            />
+        <item
+            android:id="@+id/DichVu"
+            android:icon="@drawable/baseline_invert_colors_24"
+            android:title="Dịch vụ"
+            />
+        <item
+            android:id="@+id/HoaDon"
+            android:icon="@drawable/baseline_monetization_on_24"
+            android:title="Hóa đơn"
+            />
+
+    </group>
+</menu>

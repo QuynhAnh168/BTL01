@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="230dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTenDangNhap"
+            android:hint="Tài khoản"
+            ></EditText>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:inputType="textWebPassword"
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            ></EditText>
+        <CheckBox
+            android:id="@+id/chkLuu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu thông tin đăng nhập"
+            android:textSize="20dp"
+            ></CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDangNhap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="20dp"
+            android:background="@drawable/dangnhap"
+            android:textStyle="bold"
+            ></androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnThoat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textSize="20dp"
+            android:background="@drawable/dangnhap"
+            android:textStyle="bold"
+            ></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+</LinearLayout>

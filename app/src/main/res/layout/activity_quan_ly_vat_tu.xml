@@ -1,0 +1,82 @@
+<!-- activity_quan_ly_vat_tu.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp"
+    tools:context=".QuanLyVatTu"
+    android:background="#F1EFEF">
+
+    <!-- Đầu đề: Quản lý vật tư -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý vật tư"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:background="@drawable/boder_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ><!-- Thành phần tìm kiếm -->
+        <EditText
+            android:id="@+id/edtIDVatTu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID vật tư"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/edtTenVatTu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên vật tư"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnTimKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm"
+            android:background="@drawable/btn_tim_kiem"/>
+    </LinearLayout>
+
+    <!-- Danh sách các VatTu -->
+    <ListView
+        android:background="@drawable/boder_background"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vatTuListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!-- Thêm các chức năng vào thanh cố định ở đây -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnThem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm"
+            android:background="@drawable/btn_them"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnXuatVatTu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xuất vật tư"
+            android:background="@drawable/btn_xuat"/>
+
+
+    </LinearLayout>
+</LinearLayout>

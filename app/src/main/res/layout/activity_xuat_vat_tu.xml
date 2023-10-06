@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/vatTuListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <!-- Thêm các chức năng vào thanh cố định ở đây -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:background="@drawable/btn_tim_kiem"
+            android:id="@+id/btnXuatVatTu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xuất Vật Tư" />
+
+        <TextView
+            android:textColor="#FF0000"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:id="@+id/tvSoLuongXuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </LinearLayout>
+
+</RelativeLayout>

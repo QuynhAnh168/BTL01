@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="material_types">
+        <item>Vật dụng cắt tóc</item>
+        <item>Sản phẩm hóa chất</item>
+        <item>Vật dụng gội đầu</item>
+        <item>Vật dụng massage</item>
+        <!-- Thêm các loại vật tư khác vào đây -->
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<!-- button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi được nhấn -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF4081" /> <!-- Màu khi nhấn -->
+            <corners android:radius="8dp" /> <!-- Góc bo tròn -->
+        </shape>
+    </item>
+    <!-- Trạng thái mặc định -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F4F4F4" /> <!-- Màu mặc định -->
+            <corners android:radius="8dp" /> <!-- Góc bo tròn -->
+        </shape>
+    </item>
+</selector>
